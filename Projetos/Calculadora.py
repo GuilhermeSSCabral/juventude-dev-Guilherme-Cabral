@@ -16,14 +16,14 @@ if opcao == "1":
     b = float(input("digite o segundo valor:"))
     
     c = a + b
-    print("A soma entre", a, "e", b, "é de", c)
+    print("A soma entre é de", c)
 
 if opcao == "2":
     a = float(input("digite o primeiro valor:"))
     b = float(input("digite o segundo valor:"))
     
     c = a - b
-    print("A subtração entre", a, "e", b, "é de", c)
+    print("A subtração entre é de", c)
 
 if opcao == "3":
     a = float(input("digite o primeiro valor:"))
@@ -31,14 +31,14 @@ if opcao == "3":
     (input("digite o segundo valor:"))
     
     c = a * b
-    print("A Multiplicação entre", a, "e", b, "é de", c)
+    print("A Multiplicação é de", c)
 
 if opcao == "4":
     a = float(input("digite o primeiro valor:"))
     b = float(input("digite o segundo valor:"))
     
     c = a / b
-    print("A Divisão entre", a, "e", b, "é de", c)
+    print("A Divisão entre é de", c)
 
 if opcao == "5":
     print("escreva no formato de:")
