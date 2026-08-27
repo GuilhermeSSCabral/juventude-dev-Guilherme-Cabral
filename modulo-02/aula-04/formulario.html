@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form>
+        <center>
+            <h1>Formulário de Concurso</h1>
+            <br><br>
+            <input type="name" placeholder="Digite seu nome">
+
+            <br><br>
+
+            <input type="email" placeholder="Digite seu e-mail"> 
+
+            <br><br>
+
+            <input type="tel" placeholder="Digite seu telefone"> 
+
+            <br><br>
+
+            <label for="cep">Digite seu CEP:</label>
+            <input type="text" id="cep" name="cep" placeholder="00000-000" pattern="[0-9]{5}-[0-9]{3}"> 
+
+            <br><br>
+
+            <label for="foto">Envie uma Foto do Rosto</label> 
+
+            <br>
+
+            <input type="file" id="foto" name="foto">
+
+             <br><br>
+
+            <div id="sexo_div">
+                <input type="radio" name="sexo" id="masculino"> <label for="masculino">Masculino</label>
+                <input type="radio" name="sexo" id="feminino"> <label for="feminino">Feminino</label>
+            </div>
+
+            <br><br>
+
+            <div id="idade_div">
+                <input type="radio" name="idade" id="menor"> <label for="menor">- 18 anos</label>
+                <input type="radio" name="idade" id="maior"> <label for="maior">+ 18 anos</label>
+            </div>
+
+            <br><br>
+
+            <input type="checkbox" name="termos" id="termos"> <label for="termos">Aceito os termos e condições</label>
+            
+            <br><br>
+            
+            <input type="submit" value="Enviar">
+        </center>
+    </form>
+</body>
+</html>
