@@ -57,7 +57,14 @@
         </center>
         
     </form>
+    <script>
+        const formulario = document.querySelector("#form-contato");
 
+        formulario.addEventListener("submit", function (event) {
+            event.preventDefault();
+            alert("Mensagem Enviada com Sucesso!");
+        });
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média</title>
+</head>
+<body>
+    <h2>Calcular Média</h2>
+
+    <form id="form-media">
+        <label for="nota1">Nota 1:</label>
+        <input type="number" id="nota1" name="nota1" min="0" max="10" step="0.1" required>
+        <br><br>
+
+        <label for="nota2">Nota 2:</label>
+        <input type="number" id="nota2" name="nota2" min="0" max="10" step="0.1" required>
+        <br><br>
+
+        <label for="nota3">Nota 3:</label>
+        <input type="number" id="nota3" name="nota3" min="0" max="10" step="0.1" required>
+        <br><br>
+
+        <button type="submit">Calcular</button>
+    </form>
+
+    <p id="resultado"></p>
+
+    <script>
+        const formulario = document.querySelector('#form-media');
+        const resultado = document.querySelector('#resultado');
+
+        formulario.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const nota1 = Number(document.querySelector('#nota1').value);
+            const nota2 = Number(document.querySelector('#nota2').value);
+            const nota3 = Number(document.querySelector('#nota3').value);
+
+            const media = (nota1 + nota2 + nota3) / 3;
+
+            if (media >= 7) {
+                resultado.textContent = `Média: ${media.toFixed(1)}. Você foi aprovado!`;
+            } else {
+                resultado.textContent = `Média: ${media.toFixed(1)}. Você foi reprovado!`;
+            }
+        });
+    </script>
+</body>
+</html>
