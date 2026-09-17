@@ -1,0 +1,28 @@
+a{
+    text-decoration: none;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+}
+
+.menu a ::after {
+    content: "";
+    position: absolute;
+    left: 0; bottom: -4px;
+    width: 0; height: 3px;
+    background: #ffc857;
+    transition: width .25s ease;
+}
+
+.menu a:hover,
+.menu a:focus {
+    color: #ffc857;
+    text-decoration: underline;
+}
+
+.menu :hover ::after,
+.menu :focus-visible ::after { width: 50% }
